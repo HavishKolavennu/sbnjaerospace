@@ -24,7 +24,12 @@ Open [http://localhost:3000](http://localhost:3000) to view the site.
 npm run build
 ```
 
-Deploy to Vercel by connecting your GitHub repo—it will auto-detect Next.js and deploy. For static hosting (e.g. GitHub Pages), add `output: 'export'` to `next.config.js` and deploy the `out/` folder.
+Deploy to Vercel by connecting your GitHub repo—it will auto-detect Next.js and deploy.
+
+**If you get 404 on Vercel:** In your Vercel project → Settings → General, ensure:
+- **Root Directory** is empty or `.` (not a subfolder)
+- **Framework Preset** is Next.js
+- **Output Directory** is empty (do not set to `out`)
 
 ## Pages
 
