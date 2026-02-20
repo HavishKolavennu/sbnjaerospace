@@ -7,7 +7,7 @@ A futuristic, Palantir-inspired website for the South Brunswick Aerospace Club (
 - **Next.js 14** (App Router)
 - **TypeScript**
 - **Tailwind CSS**
-- **Static Export** (deployable to any static host)
+- **Vercel-optimized** (standard Next.js deployment)
 
 ## Development
 
@@ -24,7 +24,7 @@ Open [http://localhost:3000](http://localhost:3000) to view the site.
 npm run build
 ```
 
-The static site is output to the `out/` directory. Deploy this folder to Vercel, Netlify, GitHub Pages, or any static hosting service.
+Deploy to Vercel by connecting your GitHub repo—it will auto-detect Next.js and deploy. For static hosting (e.g. GitHub Pages), add `output: 'export'` to `next.config.js` and deploy the `out/` folder.
 
 ## Pages
 
